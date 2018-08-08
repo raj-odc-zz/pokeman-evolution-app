@@ -1,0 +1,74 @@
+.species {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.species__list--ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+
+  h4 {
+      margin: 0px
+  }
+}
+
+.species__list--li {
+  display: flex;
+  border: 1px solid grey;
+  flex-direction: column;
+  line-height: 30px;
+  flex-basis: 40%;
+  align-items: center;
+  max-width: 187px;
+  margin: 5px;
+}
+
+.species__list--evolution {
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #DCDCDC;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  margin: 0px;
+}
+
+.species__list--evolution:hover {
+  background-color: #23708f;
+  color: #fff;
+}
+
+.species__list a {
+  text-align: right;
+  font-size: 12px;
+}
+
+.species--search {
+  padding: 12px;
+  transition: .4s ease;
+  margin-right:10px;
+}
+
+.species--search:focus {
+  border: 1px solid #23708f;
+  outline: none;
+}
+
+.species--asc:hover {
+  background-color: #23708f;
+  color: #fff;
+}
+
+.species--desc:hover {
+  background-color: #23708f;
+  color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  .species__list--li {
+    flex: 25%;
+  }
+}
